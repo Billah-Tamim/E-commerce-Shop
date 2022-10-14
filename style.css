@@ -461,6 +461,98 @@ footer .copyright{
 #close{
     display: none;
 }
+
+/* shop page  */
+#page-header{
+    background-image: url(images/banner/b1.jpg);
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2,
+#page-header p{
+    color: #fff;
+} 
+
+#pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pagination a{
+    text-decoration: none;
+    height: 40px;
+    width: 50px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #088178;
+    border-radius: 8px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* single product  */
+#prodetails{
+    display: flex;
+    margin: 20px;
+}
+#prodetails .single-pro-img{
+    width: 40%;
+    margin-right: 50px;
+}
+#prodetails .small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+#prodetails .small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 45px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color: #fff;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
+    text-align:;
+}
 /* midea  */
 @media(max-width:799px){
     .section-p1 {
@@ -586,6 +678,19 @@ footer .copyright{
         width: 100%;
     }
     #newsletter {
-        padding: 40px 20px;
+        padding: 40px 40px;
+    }
+    /* single product */
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-img {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details {
+        width: 100%;
     }
 }
+
