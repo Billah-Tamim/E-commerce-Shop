@@ -553,6 +553,96 @@ footer .copyright{
     line-height: 25px;
     text-align:;
 }
+
+/* blog page  */
+#page-header.blog-header{
+    background-image: url(images/banner/b19.jpg);
+}
+#blog{
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 90px;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .blog-details{
+    width: 50%;
+}
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.4s ease;
+}
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+#blog .blog-details a:hover{
+    color: #088178;
+}
+#blog .blog-details a:hover::after{
+    background-color: #088178;
+}
+#blog .blog-box h1{
+    position: absolute;
+    top: -45px;
+    left: 0px;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -5;
+}
+
+/* about page  */
+#page-header.about-header{
+    background-image: url(images/about/banner.png);
+}
+#about-content{
+    display: flex;
+    align-items: center;
+}
+#about-content img{
+    width: 50%;
+    height: auto;
+}
+#about-content .content-details{
+    padding-left: 40px;
+}
+#about-app{
+    text-align: center;
+}
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
 /* midea  */
 @media(max-width:799px){
     .section-p1 {
@@ -656,7 +746,7 @@ footer .copyright{
         margin-bottom: 15px;
     }
     #features {
-        justify-content: space-between;
+        justify-content: center;
     }
     #products-1 .pro {
         width: 100%;
@@ -690,6 +780,38 @@ footer .copyright{
         margin-right: 0px;
     }
     #prodetails .single-pro-details {
+        width: 100%;
+    }
+    /* blog page  */
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+    #blog .blog-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #blog .blog-details {
+        width: 100%;
+    }
+    /* about page  */
+    #about-content {
+        flex-direction: column;
+    }
+    #about-content img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #about-content .content-details {
+        padding-left: 0px;
+        width: 100%;
+    }
+    #about-app .video {
         width: 100%;
     }
 }
